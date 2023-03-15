@@ -12,16 +12,16 @@
 <body class="">
 
     <div class="d-flex">
-        <aside class="sidebar vh-100 border-end d-flex flex-column bg-white pt-3">
+        <aside class="sidebar vh-100 border-end d-flex flex-column bg-white">
             <!-- Part 1. Title -->
-            <div class="px-4 text-center">
+            <div class="px-4 py-3 text-center" aria-label="Hex-Resturant Backgroung-Management-System Logo">
                 <strong>六角西餐廳</strong>
                 - 後臺管理
             </div>
             <!-- Part 2. Content-List -->
             <div class="overflow-auto">
                 <div>
-                    <a href="index.html" class="sidebar-link bg-light border-bottom">
+                    <a href="index.html" class="sidebar-link bg-light border-bottom" aria-label="Home-Page-Link">
                         <div class="px-4">
                             <i class="bi bi-house"></i>
                             首頁
@@ -30,7 +30,7 @@
                 </div>
 
                 <div>
-                    <a href="#menu-order" class="sidebar-link border-bottom active" data-bs-toggle="collapse">
+                    <a href="#menu-order" class="sidebar-link border-bottom" data-bs-toggle="collapse" aria-label="Orders-Manage-Group">
                         <div class="d-flex justify-content-between px-4">
                             <p class="mb-0">
                                 <i class="bi bi-card-checklist"></i>
@@ -40,32 +40,32 @@
                         </div>
                     </a>
                     <div class="collapse" id="menu-order">
-                        <a href="orders.html" class="sidebar-link">
+                        <a href="orders.html" class="sidebar-link" aria-label="Orders-Overview">
                             <div class="ps-5">
-                                訂單總攬
+                                訂單總覽
                             </div>
                         </a>
-                        <a href="order.html" class="sidebar-link">
+                        <a href="order.html" class="sidebar-link" aria-label="Single-Order-Manage">
                             <div class="ps-5">
                                 單一訂單管理
                             </div>
                         </a>
-                        <a href="#" class="sidebar-link">
+                        <a href="#" class="sidebar-link" aria-label="Not-Delivery-Orders">
                             <div class="ps-5">
                                 待出貨
                             </div>
                         </a>
-                        <a href="#" class="sidebar-link">
+                        <a href="#" class="sidebar-link" aria-label="Cancel-Orders">
                             <div class="ps-5">
                                 不成立
                             </div>
                         </a>
-                        <a href="#" class="sidebar-link">
+                        <a href="#" class="sidebar-link" aria-label="Return & Refund">
                             <div class="ps-5">
                                 退貨/退款
                             </div>
                         </a>
-                        <a href="#" class="sidebar-link">
+                        <a href="#" class="sidebar-link" aria-label="Comments">
                             <div class="ps-5">
                                 評價
                             </div>
@@ -74,7 +74,7 @@
                 </div>
 
                 <div>
-                    <a href="#menu-items" class="sidebar-link border-bottom" data-bs-toggle="collapse">
+                    <a href="#menu-items" class="sidebar-link border-bottom" data-bs-toggle="collapse" aria-label="Products-Manage-Group">
                         <div class="d-flex justify-content-between px-4">
                             <p class="mb-0">
                                 <i class="bi bi-card-checklist"></i>
@@ -83,28 +83,28 @@
                             <i class="bi bi-chevron-down"></i>
                         </div>
                     </a>
-                    <div class="collapse" id="menu-items">
-                        <a href="#" class="sidebar-link">
+                    <div class="collapse" id="menu-items" >
+                        <a href="#" class="sidebar-link" aria-label="Appetizer">
                             <div class="ps-5">
                                 前菜
                             </div>
                         </a>
-                        <a href="#" class="sidebar-link">
+                        <a href="#" class="sidebar-link" aria-label="Main-Meal">
                             <div class="ps-5">
                                 主餐
                             </div>
                         </a>
-                        <a href="#" class="sidebar-link">
+                        <a href="#" class="sidebar-link" aria-label="Side-Meal">
                             <div class="ps-5">
                                 附餐
                             </div>
                         </a>
-                        <a href="#" class="sidebar-link">
+                        <a href="#" class="sidebar-link" aria-label="Dessert">
                             <div class="ps-5">
                                 甜點
                             </div>
                         </a>
-                        <a href="#" class="sidebar-link">
+                        <a href="#" class="sidebar-link" aria-label="Drink">
                             <div class="ps-5">
                                 飲料
                             </div>
@@ -113,7 +113,7 @@
                 </div>
 
                 <div>
-                    <a href="#menu-user" class="sidebar-link border-bottom" data-bs-toggle="collapse">
+                    <a href="#menu-user" class="sidebar-link border-bottom" data-bs-toggle="collapse" aria-label="Users-Manage-Group">
                         <div class="d-flex justify-content-between px-4">
                             <p class="mb-0">
                                 <i class="bi bi-person-fill"></i>
@@ -123,22 +123,22 @@
                         </div>
                     </a>
                     <div class="collapse" id="menu-user">
-                        <a href="#" class="sidebar-link">
+                        <a href="#" class="sidebar-link" aria-label="Manager">
                             <div class="ps-5">
                                 管理者
                             </div>
                         </a>
-                        <a href="#" class="sidebar-link">
+                        <a href="#" class="sidebar-link" aria-label="User">
                             <div class="ps-5">
                                 使用者
                             </div>
                         </a>
-                        <a href="#" class="sidebar-link">
+                        <a href="#" class="sidebar-link" aria-label="Consumer-Infomation">
                             <div class="ps-5">
                                 客戶資訊
                             </div>
                         </a>
-                        <a href="#" class="sidebar-link">
+                        <a href="#" class="sidebar-link" aria-label="System-Producter">
                             <div class="ps-5">
                                 系統廠商
                             </div>
@@ -153,9 +153,10 @@
                 </div>
             </a>
         </aside>
+
         <main class="main">
             <div class="bg-white w-100 border-bottom sticky-top">
-                <a href="#" class="d-inline-block py-3 px-4" id="toggle-btn">
+                <a href="#" class="d-inline-block py-3 px-4" id="toggle-btn" aria-label="Side_Menu-Toggle-Button">
                     <i class="bi bi-arrows-angle-expand"></i>
                 </a>
             </div>
@@ -220,8 +221,8 @@
                                         <th scope="col" class="pe-4">編輯</th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <tr class="align-middle">
+                                <tbody id="tableData">
+                                    <tr class="align-middle" id="3689-7134">
                                         <td class="ps-4">
                                             <input type="checkbox" class="form-check-input">
                                         </td>
@@ -243,12 +244,12 @@
                                                 <ul class="dropdown-menu">
                                                     <li><a class="dropdown-item" href="#">變更付款狀態</a></li>
                                                     <li><a class="dropdown-item" href="#">變更出貨狀態</a></li>
-                                                    <li><a class="dropdown-item link-danger" href="#" data-bs-toggle="modal" data-bs-target="#deleteModal" data-bs-order-id="#3689-7134">刪除訂單</a></li>
+                                                    <li><a class="dropdown-item link-danger" href="#" data-bs-toggle="modal" data-bs-target="#deleteModal" data-bs-order-id="3689-7134">刪除訂單</a></li>
                                                 </ul>
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr class="align-middle">
+                                    <tr class="align-middle" id="3689-7135">
                                         <td class="ps-4">
                                             <input type="checkbox" class="form-check-input">
                                         </td>
@@ -270,12 +271,12 @@
                                                 <ul class="dropdown-menu">
                                                     <li><a class="dropdown-item" href="#">變更付款狀態</a></li>
                                                     <li><a class="dropdown-item" href="#">變更出貨狀態</a></li>
-                                                    <li><a class="dropdown-item link-danger" href="#" data-bs-toggle="modal" data-bs-target="#deleteModal" data-bs-order-id="#3689-7135">刪除訂單</a></li>
+                                                    <li><a class="dropdown-item link-danger" href="#" data-bs-toggle="modal" data-bs-target="#deleteModal" data-bs-order-id="3689-7135">刪除訂單</a></li>
                                                 </ul>
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr class="align-middle">
+                                    <tr class="align-middle" id="3689-7136">
                                         <td class="ps-4">
                                             <input type="checkbox" class="form-check-input">
                                         </td>
@@ -297,12 +298,12 @@
                                                 <ul class="dropdown-menu">
                                                     <li><a class="dropdown-item" href="#">變更付款狀態</a></li>
                                                     <li><a class="dropdown-item" href="#">變更出貨狀態</a></li>
-                                                    <li><a class="dropdown-item link-danger" href="#" data-bs-toggle="modal" data-bs-target="#deleteModal" data-bs-order-id="#3689-7136">刪除訂單</a></li>
+                                                    <li><a class="dropdown-item link-danger" href="#" data-bs-toggle="modal" data-bs-target="#deleteModal" data-bs-order-id="3689-7136">刪除訂單</a></li>
                                                 </ul>
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr class="align-middle">
+                                    <tr class="align-middle" id="3689-7137">
                                         <td class="ps-4">
                                             <input type="checkbox" class="form-check-input">
                                         </td>
@@ -324,7 +325,7 @@
                                                 <ul class="dropdown-menu">
                                                     <li><a class="dropdown-item" href="#">變更付款狀態</a></li>
                                                     <li><a class="dropdown-item" href="#">變更出貨狀態</a></li>
-                                                    <li><a class="dropdown-item link-danger" href="#" data-bs-toggle="modal" data-bs-target="#deleteModal" data-bs-order-id="#3689-7137">刪除訂單</a></li>
+                                                    <li><a class="dropdown-item link-danger" href="#" data-bs-toggle="modal" data-bs-target="#deleteModal" data-bs-order-id="3689-7137">刪除訂單</a></li>
                                                 </ul>
                                             </div>
                                         </td>
@@ -357,7 +358,7 @@
                             <p>確認刪除「 <span id="deleteText"></span> 」這筆訂單嗎 ?</p>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-danger">確定刪除</button>
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">確定刪除</button>
                             <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">取消</button>
                         </div>
                         </div>
@@ -369,6 +370,6 @@
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <script src="js/all.js"></script>
+    <script src="js/orders.js"></script>
 </body>
 </html>
